@@ -207,3 +207,15 @@ a.button {
 a.button:hover {
     background-color: #3700b3;
 }
+
+.home-options {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente (si es necesario) */
+    margin-top: 20px;         /* Espacio entre el h2 y los botones */
+    padding: 20px;            /* Espaciado interno */
+    border: 2px solid #6200ea; /* Borde del recuadro */
+    border-radius: 8px;       /* Bordes redondeados */
+    background-color: #fff;   /* Fondo blanco */
+    gap: 20px;
+}
