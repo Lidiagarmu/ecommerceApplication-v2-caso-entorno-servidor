@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["user"])){
-    header("Location: home.php");  // Si ya está autenticado, redirige al dashboard
+    header("Location: home.php"); 
     exit();
 }
 
@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validación simple para el usuario "Lidia" y contraseña "123"
     if($usuario === "Lidia" && $contrasena === "123"){
         $_SESSION['user'] = $usuario;
-        header("Location: home.php");  // Redirige al dashboard si las credenciales son correctas
+        header("Location: home.php");  // Redirige al home si las credenciales son correctas
         exit();
     } else {
         $error = "Usuario o contraseña incorrectos";
