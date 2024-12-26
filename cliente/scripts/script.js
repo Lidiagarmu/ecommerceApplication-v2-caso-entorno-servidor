@@ -1,7 +1,6 @@
 // Cargar preferencias guardadas desde localStorage
 document.addEventListener('DOMContentLoaded', () => {
-    initializePreferences();
-    clearCart(); 
+    initializePreferences(); 
     initializeCart();
 });
 
